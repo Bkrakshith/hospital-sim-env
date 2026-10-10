@@ -1,0 +1,23 @@
+# hospital-sim-env: Python set for objects/build_objects.py.
+# This is the package list objects/build.sh passes to `uv run --no-project --python 3.11 --with ...`,
+# pinned to the versions uv resolved on 2026-10-10 under Python 3.11.16. Use it with uv:
+#   uv run --no-project --python 3.11 --with-requirements hospital-sim-env/requirements.txt \
+#       python hospital-sim-env/objects/build_objects.py
+# Do NOT pip install it into the master .venv: that venv runs numpy 1.26.4 and mujoco 3.14.0 for
+# objects/check_objects.py and objects/tools/*.py (see the master README's Environments table).
+#
+# Direct imports: numpy, trimesh, yaml (pyyaml), pxr (usd-core), PIL (pillow), coacd (hulls mode only).
+# scipy, fast-simplification and networkx are trimesh back-ends (plane sections, quadric decimation).
+usd-core==26.8
+trimesh==5.1.1
+coacd==1.0.14
+numpy==2.4.6
+scipy==1.17.1
+pyyaml==6.0.3
+pillow==12.3.0
+fast-simplification==0.2.0
+networkx==3.6.1
+
+# isaac/scene offline scripts need no pip install beyond usd-core (build_hospital.py); the optional
+# asset-mirror and video scripts add pillow, pymeshlab, numpy and imageio-ffmpeg through `uv run --with`
+# (see isaac/README.md). The in-Isaac scripts (render_*.py, enable_mcp_late.py) use only Isaac Sim's own modules.
