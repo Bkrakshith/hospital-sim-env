@@ -1,0 +1,30 @@
+hospital-sim-env
+Copyright 2026 Bkrakshith (https://github.com/Bkrakshith)
+
+hospital-sim-env is part of hospital-sim (https://github.com/Bkrakshith/hospital-sim), created by Bkrakshith.
+
+This work is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Attribution. Section 4 of the licence requires that any redistribution or derivative work keeps this
+NOTICE file and shows its attribution. If you use this work or build on it, give this credit in your
+documentation, in the credits of your product, and in your source distribution:
+
+    Based on hospital-sim by Bkrakshith (https://github.com/Bkrakshith/hospital-sim)
+
+If you use this work in a publication, cite it with the details in CITATION.cff.
+
+Third-party components
+
+The parts below are not covered by the copyright above and keep their own licences.
+
+- The meshes in objects/meshes/angled_tweezers, objects/meshes/veress_needle and objects/meshes/trocar, and the
+  MJCF and USD files generated from them, come from the Lightwheel assets in the NVIDIA Isaac for Healthcare
+  catalog. They are licensed under CC BY-NC 4.0 (non-commercial, attribution required), not under Apache-2.0.
+  Commercial use of these three instruments is not permitted.
+
+- The meshes in objects/meshes/scalpel_handle and objects/meshes/scissors come from the NVIDIA Isaac for
+  Healthcare catalog, Apache-2.0.
+
+- The USD layers in isaac/usd reference the NVIDIA Isaac Sim hospital building and Isaac for Healthcare assets
+  but do not contain them. Those assets are not included in this repository and stay under NVIDIA's terms.
+  The images and video in isaac/renders show those assets.

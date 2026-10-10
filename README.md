@@ -310,3 +310,12 @@ the master repository.
 | `objects/placements.yaml` | YAML, world frame, yaw in radians | `g1-isaac-sim/make_theatre_layer.py`, `g1-mujoco-sim`, `hospital-sim-ros2` mission locations |
 | `objects/catalog.json` | JSON: `labels`, per-instrument dimensions, mass, inertia, grasp region, `rack.slots`, `world_poses` (pos + wxyz quaternion), `robot_stances`, `remove_scene_props` | `g1-mujoco-sim/theatre.py`, `g1-isaac-sim`, `hospital-sim-ros2` (`g1_mission`, `g1_perception/gt.py`). Any perception pipeline can use the names in `labels` as class labels |
 | World frame | wing origin at world (17.93, -4.45, 0); theatre spans world x 17.93..27.93, y -24.45..-14.45 | all of the above |
+
+## License
+
+The license of this repository is the Apache License, Version 2.0 (see `LICENSE`).
+You can use, change and share this work, also for commercial use.
+If you share this work or a work that you built on it, keep the `NOTICE` file.
+Give this credit in your documentation and product credits: "Based on hospital-sim by Bkrakshith (https://github.com/Bkrakshith/hospital-sim)".
+To cite this work in a publication, use `CITATION.cff`.
+Some third-party parts keep their own licences. The `NOTICE` file lists them.
