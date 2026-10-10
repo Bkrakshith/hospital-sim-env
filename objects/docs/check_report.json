@@ -1,0 +1,111 @@
+{
+ "compile": {
+  "adson_forceps.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 7
+  },
+  "angled_tweezers.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 17
+  },
+  "instrument_table.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 14
+  },
+  "needle_driver.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 28
+  },
+  "scalpel_handle.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 17
+  },
+  "scissors.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 20
+  },
+  "surgeon.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 20
+  },
+  "theatre_objects.xml": {
+   "ok": true,
+   "nbody": 11,
+   "ngeom": 220
+  },
+  "tool_rack.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 54
+  },
+  "trocar.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 17
+  },
+  "veress_needle.xml": {
+   "ok": true,
+   "nbody": 2,
+   "ngeom": 25
+  }
+ },
+ "settle": {
+  "scalpel_handle": {
+   "tilt_deg": 2.34,
+   "xy_drift_mm": 0.03,
+   "z_drop_mm": 0.04,
+   "speed": 1e-05,
+   "ok": true
+  },
+  "adson_forceps": {
+   "tilt_deg": 0.0,
+   "xy_drift_mm": 0.0,
+   "z_drop_mm": 0.01,
+   "speed": 0.0,
+   "ok": true
+  },
+  "angled_tweezers": {
+   "tilt_deg": 3.45,
+   "xy_drift_mm": 0.98,
+   "z_drop_mm": 0.05,
+   "speed": 2e-05,
+   "ok": true
+  },
+  "scissors": {
+   "tilt_deg": 2.45,
+   "xy_drift_mm": 0.15,
+   "z_drop_mm": 0.02,
+   "speed": 4e-05,
+   "ok": true
+  },
+  "needle_driver": {
+   "tilt_deg": 0.0,
+   "xy_drift_mm": 0.0,
+   "z_drop_mm": 0.03,
+   "speed": 0.0,
+   "ok": true
+  },
+  "veress_needle": {
+   "tilt_deg": 2.5,
+   "xy_drift_mm": 0.11,
+   "z_drop_mm": 0.09,
+   "speed": 4e-05,
+   "ok": true
+  },
+  "trocar": {
+   "tilt_deg": 2.35,
+   "xy_drift_mm": 0.04,
+   "z_drop_mm": 0.11,
+   "speed": 2e-05,
+   "ok": true
+  }
+ },
+ "ok": true
+}

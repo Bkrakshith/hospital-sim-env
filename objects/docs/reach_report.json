@@ -1,0 +1,449 @@
+{
+ "stance": [
+  25.6,
+  -20.19,
+  -1.5707963
+ ],
+ "right": {
+  "scalpel_handle": {
+   "pos_err_mm": 0.3,
+   "rot_err_deg": 0.1,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "right_shoulder_pitch": -0.246,
+    "right_shoulder_roll": -0.698,
+    "right_shoulder_yaw": -0.316,
+    "right_elbow": -0.298,
+    "right_wrist_roll": 0.281,
+    "right_wrist_pitch": 1.614,
+    "right_wrist_yaw": 0.438
+   }
+  },
+  "adson_forceps": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "right_shoulder_pitch": -0.262,
+    "right_shoulder_roll": -0.447,
+    "right_shoulder_yaw": -0.272,
+    "right_elbow": -0.311,
+    "right_wrist_roll": 1.451,
+    "right_wrist_pitch": 1.614,
+    "right_wrist_yaw": -0.978
+   }
+  },
+  "angled_tweezers": {
+   "pos_err_mm": 4.3,
+   "rot_err_deg": 1.5,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "right_shoulder_pitch": -0.445,
+    "right_shoulder_roll": 0.642,
+    "right_shoulder_yaw": -0.202,
+    "right_elbow": -0.336,
+    "right_wrist_roll": -1.972,
+    "right_wrist_pitch": 1.323,
+    "right_wrist_yaw": 1.379
+   }
+  },
+  "scissors": {
+   "pos_err_mm": 0.8,
+   "rot_err_deg": 0.2,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "right_shoulder_pitch": -0.381,
+    "right_shoulder_roll": 0.77,
+    "right_shoulder_yaw": 0.156,
+    "right_elbow": -0.276,
+    "right_wrist_roll": -1.041,
+    "right_wrist_pitch": 1.614,
+    "right_wrist_yaw": 0.214
+   }
+  },
+  "needle_driver": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.432,
+   "q": {
+    "right_shoulder_pitch": -0.344,
+    "right_shoulder_roll": 0.898,
+    "right_shoulder_yaw": 0.075,
+    "right_elbow": 0.125,
+    "right_wrist_roll": -0.273,
+    "right_wrist_pitch": 1.182,
+    "right_wrist_yaw": -0.67
+   }
+  },
+  "veress_needle": {
+   "pos_err_mm": 83.5,
+   "rot_err_deg": 10.4,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "right_shoulder_pitch": 1.274,
+    "right_shoulder_roll": 1.588,
+    "right_shoulder_yaw": 1.288,
+    "right_elbow": 1.158,
+    "right_wrist_roll": -0.73,
+    "right_wrist_pitch": 0.622,
+    "right_wrist_yaw": -0.911
+   }
+  },
+  "trocar": {
+   "pos_err_mm": 158.0,
+   "rot_err_deg": 18.7,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "right_shoulder_pitch": 1.222,
+    "right_shoulder_roll": 1.588,
+    "right_shoulder_yaw": -0.248,
+    "right_elbow": 1.376,
+    "right_wrist_roll": -1.972,
+    "right_wrist_pitch": 0.303,
+    "right_wrist_yaw": -0.964
+   }
+  }
+ },
+ "right_with_waist": {
+  "scalpel_handle": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.148,
+   "q": {
+    "waist_yaw": -0.088,
+    "waist_roll": -0.372,
+    "waist_pitch": -0.002,
+    "right_shoulder_pitch": -0.293,
+    "right_shoulder_roll": -0.601,
+    "right_shoulder_yaw": -0.16,
+    "right_elbow": 0.514,
+    "right_wrist_roll": 0.336,
+    "right_wrist_pitch": 0.881,
+    "right_wrist_yaw": 0.688
+   }
+  },
+  "adson_forceps": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": -0.108,
+    "waist_roll": -0.52,
+    "waist_pitch": -0.149,
+    "right_shoulder_pitch": -0.265,
+    "right_shoulder_roll": -0.302,
+    "right_shoulder_yaw": -0.127,
+    "right_elbow": 0.478,
+    "right_wrist_roll": 0.363,
+    "right_wrist_pitch": 0.96,
+    "right_wrist_yaw": 0.489
+   }
+  },
+  "angled_tweezers": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": -0.187,
+    "waist_roll": -0.52,
+    "waist_pitch": -0.379,
+    "right_shoulder_pitch": -0.381,
+    "right_shoulder_roll": -0.042,
+    "right_shoulder_yaw": -0.147,
+    "right_elbow": 0.4,
+    "right_wrist_roll": 0.394,
+    "right_wrist_pitch": 1.27,
+    "right_wrist_yaw": 0.167
+   }
+  },
+  "scissors": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": -0.276,
+    "waist_roll": -0.52,
+    "waist_pitch": -0.444,
+    "right_shoulder_pitch": -0.487,
+    "right_shoulder_roll": 0.322,
+    "right_shoulder_yaw": -0.232,
+    "right_elbow": 0.315,
+    "right_wrist_roll": 0.393,
+    "right_wrist_pitch": 1.393,
+    "right_wrist_yaw": -0.173
+   }
+  },
+  "needle_driver": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": -0.273,
+    "waist_roll": -0.52,
+    "waist_pitch": -0.354,
+    "right_shoulder_pitch": -0.491,
+    "right_shoulder_roll": 0.679,
+    "right_shoulder_yaw": -0.2,
+    "right_elbow": 0.221,
+    "right_wrist_roll": 0.321,
+    "right_wrist_pitch": 1.31,
+    "right_wrist_yaw": -0.444
+   }
+  },
+  "veress_needle": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.055,
+   "q": {
+    "waist_yaw": -0.456,
+    "waist_roll": -0.465,
+    "waist_pitch": -0.161,
+    "right_shoulder_pitch": -0.749,
+    "right_shoulder_roll": 1.229,
+    "right_shoulder_yaw": -0.138,
+    "right_elbow": 0.056,
+    "right_wrist_roll": 0.202,
+    "right_wrist_pitch": 1.424,
+    "right_wrist_yaw": -0.842
+   }
+  },
+  "trocar": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": -0.19,
+    "waist_roll": -0.52,
+    "waist_pitch": 0.091,
+    "right_shoulder_pitch": -0.502,
+    "right_shoulder_roll": 1.433,
+    "right_shoulder_yaw": 0.208,
+    "right_elbow": 0.372,
+    "right_wrist_roll": -0.008,
+    "right_wrist_pitch": 0.888,
+    "right_wrist_yaw": -0.959
+   }
+  }
+ },
+ "left": {
+  "scalpel_handle": {
+   "pos_err_mm": 168.0,
+   "rot_err_deg": 19.6,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "left_shoulder_pitch": 1.063,
+    "left_shoulder_roll": -1.588,
+    "left_shoulder_yaw": 0.303,
+    "left_elbow": 1.329,
+    "left_wrist_roll": 1.972,
+    "left_wrist_pitch": 0.328,
+    "left_wrist_yaw": 0.942
+   }
+  },
+  "adson_forceps": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.59,
+   "q": {
+    "left_shoulder_pitch": -1.198,
+    "left_shoulder_roll": -0.905,
+    "left_shoulder_yaw": 0.608,
+    "left_elbow": 1.132,
+    "left_wrist_roll": -0.002,
+    "left_wrist_pitch": 0.497,
+    "left_wrist_yaw": 1.025
+   }
+  },
+  "angled_tweezers": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.29,
+   "q": {
+    "left_shoulder_pitch": -0.442,
+    "left_shoulder_roll": -0.964,
+    "left_shoulder_yaw": -0.023,
+    "left_elbow": 0.028,
+    "left_wrist_roll": 0.327,
+    "left_wrist_pitch": 1.324,
+    "left_wrist_yaw": 0.677
+   }
+  },
+  "scissors": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "left_shoulder_pitch": -0.388,
+    "left_shoulder_roll": -0.754,
+    "left_shoulder_yaw": -0.146,
+    "left_elbow": -0.264,
+    "left_wrist_roll": 1.247,
+    "left_wrist_pitch": 1.614,
+    "left_wrist_yaw": -0.436
+   }
+  },
+  "needle_driver": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "left_shoulder_pitch": -0.315,
+    "left_shoulder_roll": -0.364,
+    "left_shoulder_yaw": -0.089,
+    "left_elbow": -0.332,
+    "left_wrist_roll": 1.488,
+    "left_wrist_pitch": 1.614,
+    "left_wrist_yaw": -1.075
+   }
+  },
+  "veress_needle": {
+   "pos_err_mm": 17.1,
+   "rot_err_deg": 5.9,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "left_shoulder_pitch": -0.354,
+    "left_shoulder_roll": 0.951,
+    "left_shoulder_yaw": -0.095,
+    "left_elbow": -0.321,
+    "left_wrist_roll": -1.972,
+    "left_wrist_pitch": 1.136,
+    "left_wrist_yaw": 1.22
+   }
+  },
+  "trocar": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.011,
+   "q": {
+    "left_shoulder_pitch": -0.196,
+    "left_shoulder_roll": 0.693,
+    "left_shoulder_yaw": 0.335,
+    "left_elbow": -0.331,
+    "left_wrist_roll": -0.271,
+    "left_wrist_pitch": 1.603,
+    "left_wrist_yaw": -0.458
+   }
+  }
+ },
+ "left_with_waist": {
+  "scalpel_handle": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": 0.211,
+    "waist_roll": 0.52,
+    "waist_pitch": 0.126,
+    "left_shoulder_pitch": -0.572,
+    "left_shoulder_roll": -1.446,
+    "left_shoulder_yaw": -0.192,
+    "left_elbow": 0.356,
+    "left_wrist_roll": 0.004,
+    "left_wrist_pitch": 0.908,
+    "left_wrist_yaw": 0.975
+   }
+  },
+  "adson_forceps": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": 0.3,
+    "waist_roll": 0.52,
+    "waist_pitch": -0.174,
+    "left_shoulder_pitch": -0.555,
+    "left_shoulder_roll": -1.079,
+    "left_shoulder_yaw": 0.061,
+    "left_elbow": 0.146,
+    "left_wrist_roll": -0.2,
+    "left_wrist_pitch": 1.227,
+    "left_wrist_yaw": 0.719
+   }
+  },
+  "angled_tweezers": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": 0.359,
+    "waist_roll": 0.52,
+    "waist_pitch": -0.402,
+    "left_shoulder_pitch": -0.613,
+    "left_shoulder_roll": -0.689,
+    "left_shoulder_yaw": 0.303,
+    "left_elbow": 0.185,
+    "left_wrist_roll": -0.357,
+    "left_wrist_pitch": 1.459,
+    "left_wrist_yaw": 0.465
+   }
+  },
+  "scissors": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": 0.265,
+    "waist_roll": 0.52,
+    "waist_pitch": -0.441,
+    "left_shoulder_pitch": -0.474,
+    "left_shoulder_roll": -0.276,
+    "left_shoulder_yaw": 0.221,
+    "left_elbow": 0.329,
+    "left_wrist_roll": -0.395,
+    "left_wrist_pitch": 1.382,
+    "left_wrist_yaw": 0.135
+   }
+  },
+  "needle_driver": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": 0.155,
+    "waist_roll": 0.52,
+    "waist_pitch": -0.34,
+    "left_shoulder_pitch": -0.314,
+    "left_shoulder_roll": 0.01,
+    "left_shoulder_yaw": 0.122,
+    "left_elbow": 0.418,
+    "left_wrist_roll": -0.365,
+    "left_wrist_pitch": 1.151,
+    "left_wrist_yaw": -0.171
+   }
+  },
+  "veress_needle": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.0,
+   "q": {
+    "waist_yaw": 0.131,
+    "waist_roll": 0.52,
+    "waist_pitch": -0.201,
+    "left_shoulder_pitch": -0.348,
+    "left_shoulder_roll": 0.399,
+    "left_shoulder_yaw": 0.135,
+    "left_elbow": 0.447,
+    "left_wrist_roll": -0.4,
+    "left_wrist_pitch": 1.136,
+    "left_wrist_yaw": -0.521
+   }
+  },
+  "trocar": {
+   "pos_err_mm": 0.0,
+   "rot_err_deg": 0.0,
+   "min_joint_margin_rad": 0.15,
+   "q": {
+    "waist_yaw": 0.094,
+    "waist_roll": 0.37,
+    "waist_pitch": -0.014,
+    "left_shoulder_pitch": -0.267,
+    "left_shoulder_roll": 0.594,
+    "left_shoulder_yaw": 0.156,
+    "left_elbow": 0.511,
+    "left_wrist_roll": -0.331,
+    "left_wrist_pitch": 0.863,
+    "left_wrist_yaw": -0.692
+   }
+  }
+ }
+}

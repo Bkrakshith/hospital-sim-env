@@ -1,0 +1,148 @@
+{
+ "side": "right",
+ "joints": [
+  "right_shoulder_pitch",
+  "right_shoulder_roll",
+  "right_shoulder_yaw",
+  "right_elbow",
+  "right_wrist_roll",
+  "right_wrist_pitch",
+  "right_wrist_yaw"
+ ],
+ "q_arm": [
+  -0.380226808127221,
+  -0.8170560214589715,
+  0.16791513146737397,
+  -0.37829611520683093,
+  1.97222205,
+  1.0796589512497428,
+  -1.3985449639402543
+ ],
+ "ik_err_mm": 19.71,
+ "rel_pos": [
+  0.13799999999999998,
+  0.040999999999999995,
+  0.015
+ ],
+ "rel_R": [
+  [
+   0.7071067811865476,
+   -0.7071067811865475,
+   0.0
+  ],
+  [
+   0.7071067811865475,
+   0.7071067811865476,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "hand_open": [
+  0.0,
+  0.8,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "hand_closed": [
+  1.0,
+  0.8,
+  0.8,
+  0.8,
+  1.0,
+  1.0
+ ],
+ "phases": {
+  "close": 0.6,
+  "hold": 1.5,
+  "shake": 3.0,
+  "end": 1.0,
+  "wrist_pitch_amp": 0.35,
+  "shoulder_pitch_amp": 0.25,
+  "freq_hz": 1.0
+ },
+ "mujoco_results": [
+  {
+   "instrument": "scalpel_handle",
+   "held": true,
+   "firm": false,
+   "settle_slip_mm": 59.1,
+   "settle_rot_deg": 59.6,
+   "shake_slip_mm": 18.8,
+   "shake_rot_deg": 5.0,
+   "max_finger_speed": 15.52,
+   "initial_penetration_mm": -0.0
+  },
+  {
+   "instrument": "adson_forceps",
+   "held": true,
+   "firm": false,
+   "settle_slip_mm": 26.7,
+   "settle_rot_deg": 64.8,
+   "shake_slip_mm": 14.9,
+   "shake_rot_deg": 8.8,
+   "max_finger_speed": 15.52,
+   "initial_penetration_mm": -0.0
+  },
+  {
+   "instrument": "angled_tweezers",
+   "held": true,
+   "firm": false,
+   "settle_slip_mm": 21.8,
+   "settle_rot_deg": 42.8,
+   "shake_slip_mm": 18.9,
+   "shake_rot_deg": 26.4,
+   "max_finger_speed": 15.52,
+   "initial_penetration_mm": -0.0
+  },
+  {
+   "instrument": "scissors",
+   "held": true,
+   "firm": false,
+   "settle_slip_mm": 17.4,
+   "settle_rot_deg": 62.3,
+   "shake_slip_mm": 13.2,
+   "shake_rot_deg": 28.1,
+   "max_finger_speed": 15.52,
+   "initial_penetration_mm": -0.0
+  },
+  {
+   "instrument": "needle_driver",
+   "held": true,
+   "firm": false,
+   "settle_slip_mm": 15.7,
+   "settle_rot_deg": 7.4,
+   "shake_slip_mm": 12.4,
+   "shake_rot_deg": 8.6,
+   "max_finger_speed": 15.52,
+   "initial_penetration_mm": -0.0
+  },
+  {
+   "instrument": "veress_needle",
+   "held": false,
+   "firm": false,
+   "settle_slip_mm": 1062.3,
+   "settle_rot_deg": 180.0,
+   "shake_slip_mm": 494.1,
+   "shake_rot_deg": 23.8,
+   "max_finger_speed": 15.52,
+   "initial_penetration_mm": -0.0
+  },
+  {
+   "instrument": "trocar",
+   "held": true,
+   "firm": true,
+   "settle_slip_mm": 38.1,
+   "settle_rot_deg": 17.6,
+   "shake_slip_mm": 5.7,
+   "shake_rot_deg": 3.8,
+   "max_finger_speed": 15.61,
+   "initial_penetration_mm": 9.7
+  }
+ ]
+}

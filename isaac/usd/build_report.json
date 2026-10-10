@@ -1,0 +1,35 @@
+{
+ "root": "usd/hospital_g1.usd",
+ "gpu_triangles_M": 10.1,
+ "shell": {
+  "Link": {
+   "cells": 3,
+   "walls": 6
+  },
+  "PreOp": {
+   "cells": 15,
+   "walls": 14
+  },
+  "PACU": {
+   "cells": 18,
+   "walls": 16
+  },
+  "Corridor": {
+   "cells": 20,
+   "walls": 19
+  }
+ },
+ "dressing_items": 108,
+ "dressing_per_room": {
+  "Link": 3,
+  "PreOp": 21,
+  "PACU": 33,
+  "Corridor": 27,
+  "Store": 14,
+  "Scrub": 5,
+  "Theatre": 5
+ },
+ "suite_props": 465,
+ "physics_specs_authored": [],
+ "issues": []
+}

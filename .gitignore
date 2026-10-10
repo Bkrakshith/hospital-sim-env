@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+# machine-specific symlinks into the NVIDIA asset mirrors, see README
+isaac/i4h_assets
+isaac/assets/isaac
+isaac/assets/i4h

@@ -1,0 +1,757 @@
+{
+ "generated_by": "hospital-sim-env/objects/build_objects.py",
+ "frame_convention": "+z along the long axis towards the handle / ring end, origin on that axis at\nthe far (tip) end, so an instrument standing in the rack has identity orientation and z = 0 at its tip.\n+x is the wider transverse direction (plane of the ring handles / jaws), +y the thin direction.",
+ "labels": [
+  "scalpel_handle",
+  "adson_forceps",
+  "angled_tweezers",
+  "scissors",
+  "needle_driver",
+  "veress_needle",
+  "trocar"
+ ],
+ "instruments": {
+  "scalpel_handle": {
+   "title": "Scalpel (handle with No. 10-type blade, 153 mm), blade down",
+   "stand_in": false,
+   "source": "i4h OR suite, SurgicalInstruments_A/sm_scalpelshandle_a01_01 (replaces the earlier procedural stand-in)",
+   "licence": "Apache-2.0 (Isaac for Healthcare assets)",
+   "size_xyz_m": [
+    0.0144,
+    0.0025,
+    0.1535
+   ],
+   "bbox_min": [
+    -0.0072,
+    -0.0013,
+    0.0
+   ],
+   "bbox_max": [
+    0.0072,
+    0.0013,
+    0.1535
+   ],
+   "mass_kg": 0.025,
+   "com": [
+    -0.00124,
+    -2e-05,
+    0.08198
+   ],
+   "inertia_diag": [
+    1e-06,
+    4.63e-05,
+    4.655e-05
+   ],
+   "inertia_quat": [
+    0.49674,
+    -0.49687,
+    -0.50345,
+    -0.5029
+   ],
+   "collision": "16 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.1455
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.1077
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/scalpel_handle.xml",
+   "usd": "hospital-sim-env/objects/usd/scalpel_handle.usd",
+   "asset": "hospital-sim-env/isaac/assets/i4h/Props/shared_OR_without_Mark/Collected_surgery_room_movie_with_heart_adjusted/Assets/Surgery Room/SurgicalInstruments_A/sm_scalpelshandle_a01_01.usd",
+   "canonical_flip": true
+  },
+  "scissors": {
+   "title": "Mayo scissors (curved, 190 mm)",
+   "stand_in": false,
+   "source": "i4h-workflows scissor pick-and-place asset (Props/SurgicalInstruments/SurgicalScissors.usd)",
+   "licence": "Apache-2.0 (Isaac for Healthcare assets)",
+   "size_xyz_m": [
+    0.058,
+    0.02,
+    0.1899
+   ],
+   "bbox_min": [
+    -0.029,
+    -0.01,
+    0.0
+   ],
+   "bbox_max": [
+    0.029,
+    0.01,
+    0.1899
+   ],
+   "mass_kg": 0.085,
+   "com": [
+    0.0,
+    -0.00476,
+    0.13023
+   ],
+   "inertia_diag": [
+    1.381e-05,
+    0.0002457,
+    0.0002582
+   ],
+   "inertia_quat": [
+    0.50434,
+    -0.49561,
+    -0.49562,
+    -0.50435
+   ],
+   "collision": "19 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.1449
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.1075
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/scissors.xml",
+   "usd": "hospital-sim-env/objects/usd/scissors.usd",
+   "asset": "hospital-sim-env/isaac/assets/i4h/Props/SurgicalInstruments/SurgicalScissors.usd",
+   "canonical_flip": true
+  },
+  "angled_tweezers": {
+   "title": "Angled tweezers (160 mm)",
+   "stand_in": false,
+   "source": "i4h Lightwheel AngledTweezers001",
+   "licence": "CC BY-NC 4.0 (Lightwheel, via i4h)",
+   "size_xyz_m": [
+    0.0202,
+    0.0149,
+    0.1599
+   ],
+   "bbox_min": [
+    -0.0101,
+    -0.0075,
+    0.0
+   ],
+   "bbox_max": [
+    0.0101,
+    0.0075,
+    0.1599
+   ],
+   "mass_kg": 0.03,
+   "com": [
+    -2e-05,
+    -0.00178,
+    0.0624
+   ],
+   "inertia_diag": [
+    1e-06,
+    5.346e-05,
+    5.38e-05
+   ],
+   "inertia_quat": [
+    0.5083,
+    -0.49137,
+    -0.49166,
+    -0.50839
+   ],
+   "collision": "16 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.1519
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.1109
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/angled_tweezers.xml",
+   "usd": "hospital-sim-env/objects/usd/angled_tweezers.usd",
+   "asset": "hospital-sim-env/isaac/assets/i4h/Props/Lightwheel/Assets/SurgicalTweezers/AngledTweezers001.usd",
+   "canonical_flip": true
+  },
+  "veress_needle": {
+   "title": "Veress (pneumoperitoneum) needle",
+   "stand_in": false,
+   "source": "i4h Lightwheel PneumoperitoneumNeedle001 (needle body only, cap removed)",
+   "licence": "CC BY-NC 4.0 (Lightwheel, via i4h)",
+   "size_xyz_m": [
+    0.0187,
+    0.01,
+    0.2143
+   ],
+   "bbox_min": [
+    -0.0093,
+    -0.005,
+    0.0
+   ],
+   "bbox_max": [
+    0.0093,
+    0.005,
+    0.2143
+   ],
+   "mass_kg": 0.02,
+   "com": [
+    -0.00056,
+    0.0,
+    0.17418
+   ],
+   "inertia_diag": [
+    1e-06,
+    2.916e-05,
+    2.942e-05
+   ],
+   "inertia_quat": [
+    0.49583,
+    0.49584,
+    0.50412,
+    -0.50414
+   ],
+   "collision": "22 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.2063
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.1382
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/veress_needle.xml",
+   "usd": "hospital-sim-env/objects/usd/veress_needle.usd",
+   "asset": "hospital-sim-env/isaac/assets/i4h/Props/Lightwheel/Assets/PneumoperitoneumNeedle001/PneumoperitoneumNeedle001.usd",
+   "canonical_flip": false
+  },
+  "trocar": {
+   "title": "Laparoscopic trocar",
+   "stand_in": false,
+   "source": "i4h Lightwheel Trocar002",
+   "licence": "CC BY-NC 4.0 (Lightwheel, via i4h)",
+   "size_xyz_m": [
+    0.0652,
+    0.0526,
+    0.1451
+   ],
+   "bbox_min": [
+    -0.0326,
+    -0.0263,
+    0.0
+   ],
+   "bbox_max": [
+    0.0326,
+    0.0263,
+    0.1451
+   ],
+   "mass_kg": 0.06,
+   "com": [
+    0.00204,
+    -0.00175,
+    0.11263
+   ],
+   "inertia_diag": [
+    2.781e-05,
+    5.652e-05,
+    6.259e-05
+   ],
+   "inertia_quat": [
+    0.49027,
+    -0.5008,
+    -0.50446,
+    -0.50434
+   ],
+   "collision": "15 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.1371
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.1035
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/trocar.xml",
+   "usd": "hospital-sim-env/objects/usd/trocar.usd",
+   "asset": "hospital-sim-env/isaac/assets/i4h/Props/Lightwheel/Assets/Trocar002/Trocar002.usd",
+   "canonical_flip": false
+  },
+  "adson_forceps": {
+   "title": "Adson tissue forceps 120 mm (STAND-IN)",
+   "stand_in": true,
+   "source": "procedural stand-in (this repo)",
+   "licence": "same as repo",
+   "size_xyz_m": [
+    0.0082,
+    0.0098,
+    0.12
+   ],
+   "bbox_min": [
+    -0.0041,
+    -0.0049,
+    -0.0
+   ],
+   "bbox_max": [
+    0.0041,
+    0.0049,
+    0.12
+   ],
+   "mass_kg": 0.016,
+   "com": [
+    0.0,
+    0.0,
+    0.07311
+   ],
+   "inertia_diag": [
+    1e-06,
+    1.537e-05,
+    1.541e-05
+   ],
+   "inertia_quat": [
+    0.70711,
+    0.0,
+    0.70711,
+    -0.0
+   ],
+   "collision": "5 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.112
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.091
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/adson_forceps.xml",
+   "usd": "hospital-sim-env/objects/usd/adson_forceps.usd",
+   "asset": null,
+   "canonical_flip": null
+  },
+  "needle_driver": {
+   "title": "Mayo-Hegar needle driver 180 mm / 7 in (STAND-IN)",
+   "stand_in": true,
+   "source": "procedural stand-in (this repo)",
+   "licence": "same as repo",
+   "size_xyz_m": [
+    0.0574,
+    0.006,
+    0.1792
+   ],
+   "bbox_min": [
+    -0.0287,
+    -0.003,
+    0.0
+   ],
+   "bbox_max": [
+    0.0287,
+    0.003,
+    0.1792
+   ],
+   "mass_kg": 0.062,
+   "com": [
+    -0.0,
+    -0.0,
+    0.1098
+   ],
+   "inertia_diag": [
+    8.3e-06,
+    0.0001875,
+    0.0001957
+   ],
+   "inertia_quat": [
+    0.5,
+    0.5,
+    0.5,
+    -0.5
+   ],
+   "collision": "26 primitives",
+   "grasp": {
+    "z_range": [
+     0.07,
+     0.1342
+    ],
+    "site": [
+     0.0,
+     0.0,
+     0.1021
+    ]
+   },
+   "mjcf": "hospital-sim-env/objects/mjcf/needle_driver.xml",
+   "usd": "hospital-sim-env/objects/usd/needle_driver.usd",
+   "asset": null,
+   "canonical_flip": null
+  }
+ },
+ "furniture": {
+  "instrument_table": {
+   "title": "Instrument table (Mayo-stand-like, tray top 0.78 m)",
+   "size_xyz_m": [
+    0.51,
+    0.76,
+    0.8
+   ],
+   "bbox_min": [
+    -0.23,
+    -0.38,
+    0.0
+   ],
+   "bbox_max": [
+    0.28,
+    0.38,
+    0.8
+   ],
+   "static": true,
+   "mjcf": "hospital-sim-env/objects/mjcf/instrument_table.xml",
+   "usd": "hospital-sim-env/objects/usd/instrument_table.usd",
+   "sites": null
+  },
+  "tool_rack": {
+   "title": "Upright instrument rack, 7 slots, 90 mm pitch",
+   "size_xyz_m": [
+    0.124,
+    0.64,
+    0.058
+   ],
+   "bbox_min": [
+    -0.064,
+    -0.32,
+    0.0
+   ],
+   "bbox_max": [
+    0.06,
+    0.32,
+    0.058
+   ],
+   "static": true,
+   "mjcf": "hospital-sim-env/objects/mjcf/tool_rack.xml",
+   "usd": "hospital-sim-env/objects/usd/tool_rack.usd",
+   "sites": null
+  },
+  "surgeon": {
+   "title": "Surgeon mannequin (static stand-in)",
+   "size_xyz_m": [
+    0.5377,
+    0.7314,
+    1.838
+   ],
+   "bbox_min": [
+    -0.12,
+    -0.4187,
+    0.0
+   ],
+   "bbox_max": [
+    0.4177,
+    0.3127,
+    1.838
+   ],
+   "static": true,
+   "mjcf": "hospital-sim-env/objects/mjcf/surgeon.xml",
+   "usd": "hospital-sim-env/objects/usd/surgeon.usd",
+   "sites": {
+    "surgeon_hand": {
+     "pos": [
+      0.25,
+      -0.35,
+      1.02
+     ],
+     "quat": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "size": [
+      0.02
+     ]
+    }
+   }
+  }
+ },
+ "rack": {
+  "pitch": 0.09,
+  "n": 7,
+  "depth": 0.12,
+  "base_t": 0.008,
+  "guide_gap": 0.04,
+  "guide_t": 0.01,
+  "clearance": 0.0025,
+  "tip_t": 0.008,
+  "min_hole": 0.006,
+  "end_margin": 0.03,
+  "half_len": 0.32000000000000006,
+  "guide_top": 0.058,
+  "base_top": 0.008,
+  "slots": {
+   "scalpel_handle": {
+    "index": 0,
+    "y": -0.27,
+    "hole_half": [
+     0.009747968196868897,
+     0.004251921832781247
+    ],
+    "instrument_pos": [
+     -0.00046724468469619765,
+     -0.2699999840112738,
+     0.0085
+    ]
+   },
+   "adson_forceps": {
+    "index": 1,
+    "y": -0.18,
+    "hole_half": [
+     0.006500000000000001,
+     0.007399898767082734
+    ],
+    "instrument_pos": [
+     -0.0,
+     -0.18,
+     0.0085
+    ]
+   },
+   "angled_tweezers": {
+    "index": 2,
+    "y": -0.09,
+    "hole_half": [
+     0.013080900974571706,
+     0.009648523651174851
+    ],
+    "instrument_pos": [
+     -0.0,
+     -0.09082319121610408,
+     0.0085
+    ]
+   },
+   "scissors": {
+    "index": 3,
+    "y": 0.0,
+    "hole_half": [
+     0.008322767460966211,
+     0.012027500152587892
+    ],
+    "instrument_pos": [
+     -8.688869762574214e-11,
+     -0.0009650000929832467,
+     0.0085
+    ]
+   },
+   "needle_driver": {
+    "index": 4,
+    "y": 0.09,
+    "hole_half": [
+     0.0073716530497720985,
+     0.0055
+    ],
+    "instrument_pos": [
+     -0.0,
+     0.09,
+     0.0085
+    ]
+   },
+   "veress_needle": {
+    "index": 5,
+    "y": 0.18,
+    "hole_half": [
+     0.0037109784637577832,
+     0.003710980691745564
+    ],
+    "instrument_pos": [
+     0.0018490261863917112,
+     0.18000001348808065,
+     0.0085
+    ]
+   },
+   "trocar": {
+    "index": 6,
+    "y": 0.27,
+    "hole_half": [
+     0.009540222093462945,
+     0.009540221394971014
+    ],
+    "instrument_pos": [
+     -0.007793279830366373,
+     0.2723596363607794,
+     0.0085
+    ]
+   }
+  }
+ },
+ "table": {
+  "top": 0.78,
+  "lx": 0.46,
+  "ly": 0.76,
+  "tray_t": 0.006,
+  "lip_h": 0.02,
+  "lip_t": 0.006,
+  "post_x": 0.18,
+  "post_r": 0.022
+ },
+ "world_poses": {
+  "instrument_table": {
+   "pos": [
+    25.6,
+    -20.6,
+    0.0
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "surgeon": {
+   "pos": [
+    23.85,
+    -19.05,
+    0.0
+   ],
+   "quat": [
+    2.320510333314241e-08,
+    0.0,
+    0.0,
+    -0.9999999999999998
+   ]
+  },
+  "tool_rack": {
+   "pos": [
+    25.59999999785641,
+    -20.520000000000003,
+    0.78
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "scalpel_handle": {
+   "pos": [
+    25.330000013832617,
+    -20.51953276254993,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "adson_forceps": {
+   "pos": [
+    25.41999999785641,
+    -20.520000004823086,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "angled_tweezers": {
+   "pos": [
+    25.50917680664031,
+    -20.5200000024336,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "scissors": {
+   "pos": [
+    25.59903499776343,
+    -20.51999999993897,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "needle_driver": {
+   "pos": [
+    25.68999999785641,
+    -20.519999997588464,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "veress_needle": {
+   "pos": [
+    25.780000011394037,
+    -20.521849021363312,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "trocar": {
+   "pos": [
+    25.87235963400837,
+    -20.512206712871787,
+    0.7885
+   ],
+   "quat": [
+    0.7071067906599738,
+    0.0,
+    0.0,
+    -0.7071067717131211
+   ]
+  },
+  "surgeon_hand": {
+   "pos": [
+    23.59999998375643,
+    -18.70000001160255,
+    1.02
+   ],
+   "quat": [
+    2.320510333314241e-08,
+    0.0,
+    0.0,
+    -0.9999999999999998
+   ]
+  }
+ },
+ "robot_stances": {
+  "theatre_instrument_table": [
+   25.6,
+   -20.19,
+   -1.5707963
+  ],
+  "theatre_surgeon_side": [
+   23.8,
+   -18.25,
+   -1.5707963
+  ]
+ },
+ "remove_scene_props": [
+  "sm_surgicalchair_a01_01",
+  "sm_surgicalchair_a01_02"
+ ]
+}
