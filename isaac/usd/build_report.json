@@ -1,9 +1,9 @@
 {
  "root": "usd/hospital_g1.usd",
- "gpu_triangles_M": 10.1,
+ "gpu_triangles_M": 10.28,
  "shell": {
   "Link": {
-   "cells": 3,
+   "cells": 6,
    "walls": 6
   },
   "PreOp": {
@@ -11,25 +11,925 @@
    "walls": 14
   },
   "PACU": {
-   "cells": 18,
-   "walls": 16
+   "cells": 15,
+   "walls": 14
   },
   "Corridor": {
    "cells": 20,
-   "walls": 19
+   "walls": 14
+  },
+  "LiftLobby": {
+   "cells": 12,
+   "walls": 8
   }
  },
- "dressing_items": 108,
+ "dressing_items": 105,
  "dressing_per_room": {
   "Link": 3,
   "PreOp": 21,
-  "PACU": 33,
-  "Corridor": 27,
+  "PACU": 28,
+  "Corridor": 26,
+  "LiftLobby": 3,
   "Store": 14,
   "Scrub": 5,
   "Theatre": 5
  },
  "suite_props": 465,
+ "building": {
+  "rooms": 47,
+  "dressing_items": 229,
+  "dressing_per_room": {
+   "Ward_B1": 7,
+   "Ward_B2": 7,
+   "Ward_B3": 7,
+   "Ward_B4": 7,
+   "Ward_B5": 7,
+   "Ward_B6": 7,
+   "Ward_ES_B1": 4,
+   "Ward_ES_B2": 4,
+   "Ward_ES_B3": 4,
+   "Ward_ES_B4": 4,
+   "Ward_ES_B5": 4,
+   "Ward_ES_B6": 4,
+   "Ward_WS1": 3,
+   "Ward_WS2": 3,
+   "Ward_AssistedShower": 5,
+   "Ward_DayRoom": 4,
+   "Ward_Cleaners": 4,
+   "Ward_CleanUtility": 4,
+   "Ward_Pantry": 4,
+   "Ward_DirtyUtility": 4,
+   "Ward_Disposal": 2,
+   "Ward_Entrance": 3,
+   "AE_Majors1": 6,
+   "AE_Majors2": 6,
+   "AE_Majors3": 5,
+   "AE_Majors4": 5,
+   "AE_Majors5": 6,
+   "AE_Majors6": 6,
+   "AE_Majors7": 6,
+   "AE_Isolation": 5,
+   "AE_Relatives": 5,
+   "AE_DirtyUtility": 4,
+   "AE_CleanUtility": 2,
+   "AE_StaffBase": 6,
+   "AE_Resus": 19,
+   "AE_Handover": 6,
+   "AE_XRay": 5,
+   "AE_Waiting": 5,
+   "AE_Triage": 7,
+   "AE_Minors1": 4,
+   "AE_Minors2": 4,
+   "WC_Accessible": 4,
+   "WC_Public": 3,
+   "Staff_WC": 4,
+   "Central_Store": 2,
+   "Main_LiftLobby": 2
+  },
+  "doorways_checked": 54,
+  "static_partitions": 87,
+  "hidden_prims": 252,
+  "main_lift_cars": 2,
+  "notes": [
+   "partition R4_P2_B4_0 touches wall meshes ['Geo_M1_DoorWall24'] (expected only at its ends)",
+   "partition R4_P2_B4_4 touches wall meshes ['Geo_M1_WindowWall10'] (expected only at its ends)",
+   "partition R5_B5_Office_2 touches wall meshes ['Geo_O_WindowWall2'] (expected only at its ends)",
+   "partition R6_P3_B6_0 touches wall meshes ['Geo_M1_WindowWall8'] (expected only at its ends)"
+  ]
+ },
+ "tier": "tier2",
+ "building_layer": {
+  "tier": "tier2",
+  "hidden_prims": 252,
+  "main_entrance_opened": [
+   "/World/Hospital/GlassDoor_55",
+   "/World/Hospital/GlassDoor2_5"
+  ],
+  "dome": {
+   "texture": "assets/i4h/Props/shared_OR_without_Mark/Collected_surgery_room_movie_with_heart_adjusted/HDRI/CloudyDay_04_04.hdr",
+   "intensity": 1000.0,
+   "texture_found": true
+  }
+ },
+ "building_mods": {
+  "boxes": {
+   "compartment": 6,
+   "stair": 8,
+   "fixed": 3,
+   "lobby": 4,
+   "shaft": 2,
+   "partition": 17,
+   "wc": 8,
+   "rebuilt": 30,
+   "glass": 4,
+   "junction": 5
+  },
+  "materials": [
+   "M_Glass",
+   "M_Wall_Plaster",
+   "M_Wall_PlasterBlue",
+   "M_Wall_PlasterGray",
+   "M_Wall_PlastiC_Gray",
+   "M_Wall_PlastiC_Tand",
+   "M_Wall_Plastic"
+  ],
+  "face_materials": {
+   "C1C2_WLink_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "C1C2_WLink_0+": [
+    "M_Wall_Plaster"
+   ],
+   "C1C2_WLink_1-": [
+    "M_Wall_Plaster"
+   ],
+   "C1C2_WLink_1+": [
+    "M_Wall_Plaster"
+   ],
+   "C1C2_WLink_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "C1C2_WLink_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "C2C3_East_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "C2C3_East_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "C2C3_East_1-": [
+    "M_Wall_Plaster"
+   ],
+   "C2C3_East_1+": [
+    "M_Wall_Plaster"
+   ],
+   "C2C3_East_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "C2C3_East_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairW_South_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairW_South_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairW_South_1-": [
+    "M_Wall_Plaster"
+   ],
+   "StairW_South_1+": [
+    "M_Wall_Plaster"
+   ],
+   "StairW_South_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairW_South_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairW_East_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairW_East_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairE_West_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairE_West_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairE_South_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairE_South_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairE_South_1-": [
+    "M_Wall_Plaster"
+   ],
+   "StairE_South_1+": [
+    "M_Wall_Plaster"
+   ],
+   "StairE_South_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "StairE_South_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "DownW_Fixed_0-": [
+    "M_Wall_Plaster"
+   ],
+   "DownW_Fixed_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "DownNE_FixedS_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "DownNE_FixedS_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "DownNE_FixedE_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "DownNE_FixedE_0+": [
+    "M_Wall_Plaster"
+   ],
+   "LiftLobby_West_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "LiftLobby_West_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "LiftLobby_North_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "LiftLobby_North_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "LiftLobby_North_1-": [
+    "M_Wall_Plaster"
+   ],
+   "LiftLobby_North_1+": [
+    "M_Wall_Plaster"
+   ],
+   "LiftLobby_North_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "LiftLobby_North_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "ShaftFill_North_0-": [
+    "M_Wall_Plaster"
+   ],
+   "ShaftFill_North_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "ShaftFill_South_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "ShaftFill_South_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Resus_South_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "Resus_South_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "Resus_South_1-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "Resus_South_1+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "P1_WS_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterGray",
+    "M_Wall_Plastic"
+   ],
+   "P1_WS_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "P1_Mid_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "P1_Mid_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "P2_WS_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "P2_WS_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "P2_Mid_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_PlastiC_Gray"
+   ],
+   "P2_Mid_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "P3_Mid_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "P3_Mid_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "DU_Disposal_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "DU_Disposal_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "DU_Disposal_1-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "DU_Disposal_1+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "DU_Disposal_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "DU_Disposal_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_EnsuiteS_0-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_EnsuiteS_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_Shower_0-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_Shower_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_Shower_1-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "Office_Shower_1+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "Office_Shower_2-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_Shower_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_DayRoom_0-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_DayRoom_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_DayRoom_1-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "Office_DayRoom_1+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "Office_DayRoom_2-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Office_DayRoom_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "WC_Front_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Front_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Front_1-": [
+    "M_Wall_Plaster"
+   ],
+   "WC_Front_1+": [
+    "M_Wall_Plaster"
+   ],
+   "WC_Front_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Front_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Front_3-": [
+    "M_Wall_Plaster"
+   ],
+   "WC_Front_3+": [
+    "M_Wall_Plaster"
+   ],
+   "WC_Front_4-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Front_4+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_West_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_West_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Mid_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_Mid_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_East_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "WC_East_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R1_B1_P1_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R1_B1_P1_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue"
+   ],
+   "R1_B1_P1_1-": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "R1_B1_P1_1+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "R1_B1_P1_1h-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R1_B1_P1_1h+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R1_B1_P1_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R1_B1_P1_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R1_B1_P1_3-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R1_B1_P1_3+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R1_B1_P1_4-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R1_B1_P1_4+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R2_P1_B2_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R2_P1_B2_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue"
+   ],
+   "R2_P1_B2_1-": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "R2_P1_B2_1+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "R2_P1_B2_1h-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R2_P1_B2_1h+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R2_P1_B2_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R2_P1_B2_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R2_P1_B2_3-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R2_P1_B2_3+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R2_P1_B2_4-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R2_P1_B2_4+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R3_B3_P2_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R3_B3_P2_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue"
+   ],
+   "R3_B3_P2_1-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Gray"
+   ],
+   "R3_B3_P2_1+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "R3_B3_P2_1h-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R3_B3_P2_1h+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R3_B3_P2_2-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R3_B3_P2_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue"
+   ],
+   "R3_B3_P2_3-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R3_B3_P2_3+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R3_B3_P2_4-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_PlastiC_Gray"
+   ],
+   "R3_B3_P2_4+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R4_P2_B4_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R4_P2_B4_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue"
+   ],
+   "R4_P2_B4_1-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Gray"
+   ],
+   "R4_P2_B4_1+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ],
+   "R4_P2_B4_1h-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R4_P2_B4_1h+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R4_P2_B4_2-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "R4_P2_B4_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue"
+   ],
+   "R4_P2_B4_3-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R4_P2_B4_3+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R4_P2_B4_4-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_PlastiC_Gray"
+   ],
+   "R4_P2_B4_4+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R5_B5_Office_0-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R5_B5_Office_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R5_B5_Office_1-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R5_B5_Office_1+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R5_B5_Office_2-": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R5_B5_Office_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R6_P3_B6_0-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R6_P3_B6_0+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R6_P3_B6_1-": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R6_P3_B6_1+": [
+    "M_Wall_PlasterBlue"
+   ],
+   "R6_P3_B6_2-": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "R6_P3_B6_2+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Junction_PierWest-": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_PierWest+": [
+    "M_Wall_Plaster",
+    "M_Wall_PlastiC_Tand"
+   ],
+   "Junction_HeaderBuilding-": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_HeaderBuilding+": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_HeaderLink-": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_HeaderLink+": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_CloseEast-": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_CloseEast+": [
+    "M_Wall_PlasterBlue",
+    "M_Wall_Plastic"
+   ],
+   "Junction_CompartmentSidePanel-": [
+    "M_Wall_Plaster"
+   ],
+   "Junction_CompartmentSidePanel+": [
+    "M_Wall_Plaster",
+    "M_Wall_Plastic"
+   ]
+  }
+ },
+ "lights": {
+  "wing_panels": 41,
+  "hospital_fittings": 147,
+  "building_panels": 9,
+  "total": 197
+ },
  "physics_specs_authored": [],
+ "fixtures": {
+  "tier": "tier2",
+  "articulations": {
+   "Doors": [
+    "Compartment",
+    "CrossCorridor",
+    "LiftLobby",
+    "Store",
+    "ScrubStore",
+    "Theatre",
+    "FinalExit",
+    "W_Compartment",
+    "E_Compartment",
+    "Main_LiftLobby",
+    "D07_Exit",
+    "D34_Exit"
+   ],
+   "Doors1": [
+    "W_Stair",
+    "E_Stair"
+   ],
+   "Lifts": [
+    "Lift1",
+    "Lift2",
+    "MainLift1",
+    "MainLift2"
+   ],
+   "Calls": [
+    "LobbyCall",
+    "MainCall"
+   ]
+  },
+  "joints": [
+   "fx_Compartment_leaf0",
+   "fx_Compartment_leaf1",
+   "fx_CrossCorridor_leaf0",
+   "fx_CrossCorridor_leaf1",
+   "fx_LiftLobby_leaf0",
+   "fx_LiftLobby_leaf1",
+   "fx_Store_leaf0",
+   "fx_Store_leaf1",
+   "fx_ScrubStore_leaf0",
+   "fx_ScrubStore_leaf1",
+   "fx_Theatre_leaf0",
+   "fx_Theatre_leaf1",
+   "fx_FinalExit_leaf0",
+   "fx_FinalExit_leaf1",
+   "fx_W_Compartment_leaf0",
+   "fx_W_Compartment_leaf1",
+   "fx_E_Compartment_leaf0",
+   "fx_E_Compartment_leaf1",
+   "fx_W_Stair_leaf0",
+   "fx_E_Stair_leaf0",
+   "fx_Main_LiftLobby_leaf0",
+   "fx_Main_LiftLobby_leaf1",
+   "fx_D07_Exit_leaf0",
+   "fx_D07_Exit_leaf1",
+   "fx_D34_Exit_leaf0",
+   "fx_D34_Exit_leaf1",
+   "fx_Lift1_door_a",
+   "fx_Lift1_door_b",
+   "fx_Lift1_Open",
+   "fx_Lift1_Close",
+   "fx_Lift2_door_a",
+   "fx_Lift2_door_b",
+   "fx_Lift2_Open",
+   "fx_Lift2_Close",
+   "fx_MainLift1_door_a",
+   "fx_MainLift1_door_b",
+   "fx_MainLift1_Open",
+   "fx_MainLift1_Close",
+   "fx_MainLift2_door_a",
+   "fx_MainLift2_door_b",
+   "fx_MainLift2_Open",
+   "fx_MainLift2_Close",
+   "fx_LobbyCall",
+   "fx_MainCall"
+  ],
+  "static_colliders": 44,
+  "transoms": [
+   "Compartment"
+  ],
+  "transoms_in_screen_heads": [
+   "W_Compartment",
+   "E_Compartment",
+   "W_Stair",
+   "E_Stair",
+   "Main_LiftLobby"
+  ],
+  "building_prims_filtered": [],
+  "initial_q": {
+   "fx_Compartment_leaf0": -1.5708,
+   "fx_Compartment_leaf1": 1.5708,
+   "fx_CrossCorridor_leaf0": -1.5708,
+   "fx_CrossCorridor_leaf1": 1.5708,
+   "fx_LiftLobby_leaf0": 1.5708,
+   "fx_LiftLobby_leaf1": -1.5708,
+   "fx_Theatre_leaf0": -1.5708,
+   "fx_Theatre_leaf1": 1.5708,
+   "fx_W_Compartment_leaf0": -1.5708,
+   "fx_W_Compartment_leaf1": 1.5708,
+   "fx_E_Compartment_leaf0": -1.5708,
+   "fx_E_Compartment_leaf1": 1.5708,
+   "fx_Main_LiftLobby_leaf0": 1.5708,
+   "fx_Main_LiftLobby_leaf1": -1.5708
+  }
+ },
+ "exterior": {
+  "triangles": 968,
+  "ambulance_box": [
+   -37.58,
+   -7.29,
+   0.0,
+   -34.98,
+   -0.3,
+   2.9
+  ],
+  "lights": 2,
+  "colliders": [
+   "AmbulanceBody",
+   "AmbulanceCab",
+   "CanopyPost0",
+   "CanopyPost1",
+   "DriveFloor",
+   "FootwayRaised",
+   "FootwayRamp",
+   "KerbAEApronEast",
+   "KerbAEApronWest",
+   "KerbAELaneNorth",
+   "KerbAELaneSouth",
+   "KerbEast",
+   "KerbNorthWest",
+   "KerbRoadEast",
+   "KerbSouth",
+   "KerbWest",
+   "KerbWestUpper",
+   "SignTotemPost0",
+   "SignTotemPost1"
+  ]
+ },
  "issues": []
 }

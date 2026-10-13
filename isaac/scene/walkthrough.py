@@ -17,8 +17,8 @@ CROSSFADE_SECONDS = 0.5
 SHOTS = [
     ("hospital", "Hospital corridor", 18,
      {"eye": ((1.0, 9.5, 1.6), (1.0, 4.2, 1.55)), "target": ((1.0, -4.0, 1.25), (1.0, -6.0, 1.2))}),
-    ("link", "Link to the surgical wing", 18,
-     {"eye": ((1.0, -0.3, 1.6), (1.0, -3.8, 1.6)), "target": ((1.0, -12.0, 1.6), (1.0, -12.0, 1.7))}),
+    ("link", "Link to the surgical wing", 18,  # x 1.4: centre of the 2.73 m doorway into the 4 m link
+     {"eye": ((1.4, -0.3, 1.6), (1.4, -3.8, 1.6)), "target": ((1.4, -12.0, 1.6), (1.4, -12.0, 1.7))}),
     ("corridor", "Surgical corridor", 18,
      {"eye": ((-10.8, -7.0, 1.7), (5.5, -7.0, 1.7)), "target": ((-3.0, -9.3, 1.2), (14.0, -9.3, 1.2))}),
     ("preop", "Pre-operative bay", 16,
@@ -31,6 +31,11 @@ SHOTS = [
      {"eye": ((-2.0, -10.7, 1.8), (-2.0, -13.6, 1.7)), "target": ((-2.0, -17.8, 1.2), (2.5, -14.2, 1.3))}),
     ("theatre", "Operating theatre", 16,
      {"orbit": {"center": (5.2, -14.6, 0.9), "radius": 3.8, "height": 2.4, "deg": (150.0, 235.0)}}),
+    # Main building (wing-local = world - WING_ORIGIN): the ward corridor from the nurse base, the A&E majors corridor.
+    ("ward", "Six-bed ward", 16,
+     {"eye": ((-0.33, 10.95, 1.6), (0.67, 18.45, 1.6)), "target": ((1.07, 32.45, 1.2), (1.07, 32.45, 1.2))}),
+    ("ae", "Emergency department: majors", 16,
+     {"eye": ((-58.23, 13.45, 1.7), (-58.23, 24.45, 1.7)), "target": ((-58.23, 37.45, 1.1), (-58.23, 37.45, 1.1))}),
 ]
 
 # Each shot is rendered from a stage that drops what that shot can never see, so path tracing at 1080p
@@ -38,9 +43,9 @@ SHOTS = [
 VIDEO_STAGES = {
     "hospital": ["/World/Wing/ORSuite", "/World/Wing/ORSuiteMods", "/World/Wing/Dressing/Store",
                  "/World/Wing/Dressing/Scrub", "/World/Wing/Dressing/Theatre"],
-    "wing": ["/World/Hospital", "/World/HospitalLighting"],
+    "wing": ["/World/Hospital", "/World/HospitalLighting", "/World/Building", "/World/BuildingMods"],
 }
-SHOT_STAGE = {"hospital": "hospital"}  # every other shot uses "wing"
+SHOT_STAGE = {"hospital": "hospital", "ward": "hospital", "ae": "hospital"}  # every other shot uses "wing"
 
 
 def stage_group(shot_name):

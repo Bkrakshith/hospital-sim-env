@@ -56,6 +56,8 @@ _HOSP_KEYS = [
     "SM_FirstAidKit_01a", "SM_Intercom_01a", "SM_Scale_01a", "SM_WaterDispenser_01a", "SM_WheelChair_01a",
     "SM_Chart_Rack_01c", "SM_Xraylightbox_01a", "S_WetFloorSign", "SM_MedicalBox_01g", "SM_Container_01a",
     "SM_PillBottleSet_01a", "SM_FirstAidKit_01a", "SM_SideTable_02a", "SM_Frame11",
+    # main-building re-plan (layout.NEW_ASSET_KEYS): WC fittings, cleaners' room, clinical waste
+    "SM_Toilet", "SM_ToiletPaper", "SM_Mirror", "SM_MopSet_01a", "SM_MopSet_01b", "SM_DisposalStand_02",
 ]
 _LW_KEYS = [
     "Box001", "Cart001", "Cart003", "InstrumentTrolley001", "Plate001", "SurgicalTray001", "SurgicalTray006",

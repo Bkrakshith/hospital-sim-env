@@ -1,0 +1,967 @@
+{
+ "button": {
+  "mass": 0.02,
+  "size": 0.05,
+  "travel": 0.004
+ },
+ "calls": [
+  {
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "joint": "fx_LobbyCall",
+   "kind": "call",
+   "lifts": [
+    "Lift1",
+    "Lift2"
+   ],
+   "pos": [
+    20.0,
+    -8.0,
+    1.0
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "hold": "-y",
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      1.0,
+      0.0
+     ],
+     "closed_yaw": 0.0,
+     "height": 2.1,
+     "hinge": [
+      0.13,
+      -0.3
+     ],
+     "hold": -1.5707963267948966,
+     "inertia_z": 11.985,
+     "joint": "fx_Compartment_leaf0",
+     "lever": 0.8,
+     "mass": 47.5,
+     "range": [
+      -1.7453292519943295,
+      1.7453292519943295
+     ],
+     "thickness": 0.054,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 0.87
+    },
+    {
+     "bolted": false,
+     "closed_dir": [
+      -1.0,
+      0.0
+     ],
+     "closed_yaw": 3.141592653589793,
+     "height": 2.1,
+     "hinge": [
+      1.87,
+      -0.3
+     ],
+     "hold": 1.5707963267948966,
+     "inertia_z": 11.985,
+     "joint": "fx_Compartment_leaf1",
+     "lever": 0.8,
+     "mass": 47.5,
+     "range": [
+      -1.7453292519943295,
+      1.7453292519943295
+     ],
+     "thickness": 0.054,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 0.87
+    }
+   ],
+   "name": "Compartment",
+   "rating": "FD60S",
+   "swing": "both"
+  },
+  {
+   "hold": "+x",
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      0.0,
+      1.0
+     ],
+     "closed_yaw": 1.5707963267948966,
+     "height": 2.1,
+     "hinge": [
+      4.0,
+      -9.0
+     ],
+     "hold": -1.5707963267948966,
+     "inertia_z": 14.0,
+     "joint": "fx_CrossCorridor_leaf0",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      -1.7453292519943295,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    },
+    {
+     "bolted": false,
+     "closed_dir": [
+      0.0,
+      -1.0
+     ],
+     "closed_yaw": -1.5707963267948966,
+     "height": 2.1,
+     "hinge": [
+      4.0,
+      -7.0
+     ],
+     "hold": 1.5707963267948966,
+     "inertia_z": 14.0,
+     "joint": "fx_CrossCorridor_leaf1",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      -1.7453292519943295,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    }
+   ],
+   "name": "CrossCorridor",
+   "rating": "FD30S",
+   "swing": "both"
+  },
+  {
+   "hold": "-x",
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      0.0,
+      1.0
+     ],
+     "closed_yaw": 1.5707963267948966,
+     "height": 2.1,
+     "hinge": [
+      14.0,
+      -9.0
+     ],
+     "hold": 1.5707963267948966,
+     "inertia_z": 14.0,
+     "joint": "fx_LiftLobby_leaf0",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      0.0,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    },
+    {
+     "bolted": false,
+     "closed_dir": [
+      0.0,
+      -1.0
+     ],
+     "closed_yaw": -1.5707963267948966,
+     "height": 2.1,
+     "hinge": [
+      14.0,
+      -7.0
+     ],
+     "hold": -1.5707963267948966,
+     "inertia_z": 14.0,
+     "joint": "fx_LiftLobby_leaf1",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      -1.7453292519943295,
+      0.0
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    }
+   ],
+   "name": "LiftLobby",
+   "rating": "FD30S",
+   "swing": "-x"
+  },
+  {
+   "hold": null,
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      1.0,
+      0.0
+     ],
+     "closed_yaw": 0.0,
+     "height": 2.1,
+     "hinge": [
+      -9.0,
+      -10.0
+     ],
+     "hold": null,
+     "inertia_z": 24.192,
+     "joint": "fx_Store_leaf0",
+     "lever": 1.13,
+     "mass": 50.4,
+     "range": [
+      -1.7453292519943295,
+      0.0
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.2
+    },
+    {
+     "bolted": true,
+     "closed_dir": [
+      -1.0,
+      0.0
+     ],
+     "closed_yaw": 3.141592653589793,
+     "height": 2.1,
+     "hinge": [
+      -7.0,
+      -10.0
+     ],
+     "hold": null,
+     "inertia_z": 7.168,
+     "joint": "fx_Store_leaf1",
+     "lever": 0.73,
+     "mass": 33.6,
+     "range": [
+      0.0,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 0.8
+    }
+   ],
+   "name": "Store",
+   "rating": "FD30S",
+   "swing": "-y"
+  },
+  {
+   "hold": null,
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      0.0,
+      1.0
+     ],
+     "closed_yaw": 1.5707963267948966,
+     "height": 2.1,
+     "hinge": [
+      -4.0,
+      -15.0
+     ],
+     "hold": null,
+     "inertia_z": 14.0,
+     "joint": "fx_ScrubStore_leaf0",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      0.0,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    },
+    {
+     "bolted": false,
+     "closed_dir": [
+      0.0,
+      -1.0
+     ],
+     "closed_yaw": -1.5707963267948966,
+     "height": 2.1,
+     "hinge": [
+      -4.0,
+      -13.0
+     ],
+     "hold": null,
+     "inertia_z": 14.0,
+     "joint": "fx_ScrubStore_leaf1",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      -1.7453292519943295,
+      0.0
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    }
+   ],
+   "name": "ScrubStore",
+   "rating": "FD30S",
+   "swing": "-x"
+  },
+  {
+   "hold": "-y",
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      1.0,
+      0.0
+     ],
+     "closed_yaw": 0.0,
+     "height": 2.1,
+     "hinge": [
+      7.0,
+      -10.0
+     ],
+     "hold": -1.5707963267948966,
+     "inertia_z": 14.0,
+     "joint": "fx_Theatre_leaf0",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      -1.7453292519943295,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    },
+    {
+     "bolted": false,
+     "closed_dir": [
+      -1.0,
+      0.0
+     ],
+     "closed_yaw": 3.141592653589793,
+     "height": 2.1,
+     "hinge": [
+      9.0,
+      -10.0
+     ],
+     "hold": 1.5707963267948966,
+     "inertia_z": 14.0,
+     "joint": "fx_Theatre_leaf1",
+     "lever": 0.9299999999999999,
+     "mass": 42.0,
+     "range": [
+      -1.7453292519943295,
+      1.7453292519943295
+     ],
+     "thickness": 0.044,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    }
+   ],
+   "name": "Theatre",
+   "rating": "FD30S",
+   "swing": "both"
+  },
+  {
+   "hold": null,
+   "leaves": [
+    {
+     "bolted": false,
+     "closed_dir": [
+      1.0,
+      0.0
+     ],
+     "closed_yaw": 0.0,
+     "height": 2.1,
+     "hinge": [
+      11.0,
+      -10.0
+     ],
+     "hold": null,
+     "inertia_z": 18.2,
+     "joint": "fx_FinalExit_leaf0",
+     "lever": 0.9299999999999999,
+     "mass": 54.6,
+     "range": [
+      -1.7453292519943295,
+      0.0
+     ],
+     "thickness": 0.054,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    },
+    {
+     "bolted": false,
+     "closed_dir": [
+      -1.0,
+      0.0
+     ],
+     "closed_yaw": 3.141592653589793,
+     "height": 2.1,
+     "hinge": [
+      13.0,
+      -10.0
+     ],
+     "hold": null,
+     "inertia_z": 18.2,
+     "joint": "fx_FinalExit_leaf1",
+     "lever": 0.9299999999999999,
+     "mass": 54.6,
+     "range": [
+      0.0,
+      1.7453292519943295
+     ],
+     "thickness": 0.054,
+     "vision_panel": [
+      0.15,
+      0.5,
+      1.8
+     ],
+     "width": 1.0
+    }
+   ],
+   "name": "FinalExit",
+   "rating": "EXIT",
+   "swing": "-y"
+  }
+ ],
+ "frame": "wing",
+ "lift_spec": {
+  "car_d": 2.7,
+  "car_w": 1.8,
+  "close_s": 3.6,
+  "curtain_z": [
+   0.025,
+   1.6
+  ],
+  "door_h": 2.1,
+  "door_w": 1.4,
+  "dwell_s": 7.0,
+  "dwell_short_s": 0.5,
+  "ke_j": 10.0,
+  "open_s": 3.0,
+  "panel_mass": 45.0,
+  "stall_n": 150.0
+ },
+ "lifts": [
+  {
+   "buttons": [
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "joint": "fx_Lift1_Open",
+     "kind": "open",
+     "lift": "Lift1",
+     "pos": [
+      20.57,
+      -9.1,
+      1.05
+     ]
+    },
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "joint": "fx_Lift1_Close",
+     "kind": "close",
+     "lift": "Lift1",
+     "pos": [
+      20.57,
+      -9.1,
+      1.15
+     ]
+    }
+   ],
+   "car": {
+    "h": 2.5,
+    "x0": 20.12,
+    "x1": 22.82,
+    "y0": -10.9,
+    "y1": -9.1
+   },
+   "center_y": -10.0,
+   "door_h": 2.1,
+   "door_w": 1.4,
+   "front_x": 20.0,
+   "name": "Lift1",
+   "panels": [
+    {
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "closed_center": [
+      20.06,
+      -10.375,
+      1.05
+     ],
+     "joint": "fx_Lift1_door_a",
+     "mass": 45.0,
+     "size": [
+      0.04,
+      0.75,
+      2.1
+     ],
+     "travel": 0.7
+    },
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "closed_center": [
+      20.06,
+      -9.625,
+      1.05
+     ],
+     "joint": "fx_Lift1_door_b",
+     "mass": 45.0,
+     "size": [
+      0.04,
+      0.75,
+      2.1
+     ],
+     "travel": 0.7
+    }
+   ]
+  },
+  {
+   "buttons": [
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "joint": "fx_Lift2_Open",
+     "kind": "open",
+     "lift": "Lift2",
+     "pos": [
+      20.57,
+      -5.1,
+      1.05
+     ]
+    },
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "joint": "fx_Lift2_Close",
+     "kind": "close",
+     "lift": "Lift2",
+     "pos": [
+      20.57,
+      -5.1,
+      1.15
+     ]
+    }
+   ],
+   "car": {
+    "h": 2.5,
+    "x0": 20.12,
+    "x1": 22.82,
+    "y0": -6.9,
+    "y1": -5.1
+   },
+   "center_y": -6.0,
+   "door_h": 2.1,
+   "door_w": 1.4,
+   "front_x": 20.0,
+   "name": "Lift2",
+   "panels": [
+    {
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "closed_center": [
+      20.06,
+      -6.375,
+      1.05
+     ],
+     "joint": "fx_Lift2_door_a",
+     "mass": 45.0,
+     "size": [
+      0.04,
+      0.75,
+      2.1
+     ],
+     "travel": 0.7
+    },
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "closed_center": [
+      20.06,
+      -5.625,
+      1.05
+     ],
+     "joint": "fx_Lift2_door_b",
+     "mass": 45.0,
+     "size": [
+      0.04,
+      0.75,
+      2.1
+     ],
+     "travel": 0.7
+    }
+   ]
+  }
+ ],
+ "static_boxes": [
+  [
+   "fx_front_0",
+   [
+    20.0,
+    -12,
+    0.0
+   ],
+   [
+    20.04,
+    -10.7,
+    3.0
+   ]
+  ],
+  [
+   "fx_header_0",
+   [
+    20.0,
+    -10.7,
+    2.1
+   ],
+   [
+    20.04,
+    -9.3,
+    3.0
+   ]
+  ],
+  [
+   "fx_front_1",
+   [
+    20.0,
+    -9.3,
+    0.0
+   ],
+   [
+    20.04,
+    -6.7,
+    3.0
+   ]
+  ],
+  [
+   "fx_header_1",
+   [
+    20.0,
+    -6.7,
+    2.1
+   ],
+   [
+    20.04,
+    -5.3,
+    3.0
+   ]
+  ],
+  [
+   "fx_front_2",
+   [
+    20.0,
+    -5.3,
+    0.0
+   ],
+   [
+    20.04,
+    -4,
+    3.0
+   ]
+  ],
+  [
+   "fx_Lift1_car_floor",
+   [
+    20.12,
+    -10.9,
+    -0.05
+   ],
+   [
+    22.82,
+    -9.1,
+    0.0
+   ]
+  ],
+  [
+   "fx_Lift1_car_roof",
+   [
+    20.12,
+    -10.9,
+    2.5
+   ],
+   [
+    22.82,
+    -9.1,
+    2.55
+   ]
+  ],
+  [
+   "fx_Lift1_car_back",
+   [
+    22.82,
+    -10.950000000000001,
+    0.0
+   ],
+   [
+    22.87,
+    -9.049999999999999,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift1_car_south",
+   [
+    20.12,
+    -10.950000000000001,
+    0.0
+   ],
+   [
+    22.82,
+    -10.9,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift1_car_north",
+   [
+    20.12,
+    -9.1,
+    0.0
+   ],
+   [
+    22.82,
+    -9.049999999999999,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift1_return_s",
+   [
+    20.080000000000002,
+    -10.9,
+    0.0
+   ],
+   [
+    20.12,
+    -10.7,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift1_return_n",
+   [
+    20.080000000000002,
+    -9.3,
+    0.0
+   ],
+   [
+    20.12,
+    -9.1,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift1_sill",
+   [
+    20.0,
+    -10.7,
+    -0.05
+   ],
+   [
+    20.12,
+    -9.3,
+    0.0
+   ]
+  ],
+  [
+   "fx_Lift2_car_floor",
+   [
+    20.12,
+    -6.9,
+    -0.05
+   ],
+   [
+    22.82,
+    -5.1,
+    0.0
+   ]
+  ],
+  [
+   "fx_Lift2_car_roof",
+   [
+    20.12,
+    -6.9,
+    2.5
+   ],
+   [
+    22.82,
+    -5.1,
+    2.55
+   ]
+  ],
+  [
+   "fx_Lift2_car_back",
+   [
+    22.82,
+    -6.95,
+    0.0
+   ],
+   [
+    22.87,
+    -5.05,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift2_car_south",
+   [
+    20.12,
+    -6.95,
+    0.0
+   ],
+   [
+    22.82,
+    -6.9,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift2_car_north",
+   [
+    20.12,
+    -5.1,
+    0.0
+   ],
+   [
+    22.82,
+    -5.05,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift2_return_s",
+   [
+    20.080000000000002,
+    -6.9,
+    0.0
+   ],
+   [
+    20.12,
+    -6.7,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift2_return_n",
+   [
+    20.080000000000002,
+    -5.3,
+    0.0
+   ],
+   [
+    20.12,
+    -5.1,
+    2.5
+   ]
+  ],
+  [
+   "fx_Lift2_sill",
+   [
+    20.0,
+    -6.7,
+    -0.05
+   ],
+   [
+    20.12,
+    -5.3,
+    0.0
+   ]
+  ]
+ ],
+ "wing_origin": [
+  17.93,
+  -4.45,
+  0.0
+ ]
+}
