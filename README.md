@@ -1,4 +1,6 @@
-# hospital-sim-env: hospital scene, surgical wing and instruments
+# WardZero Hospital Environment
+
+Part of [WardZero](https://bkrakshith.github.io/wardzero/), a simulated hospital for testing robots before they meet patients. Start from the main repository, [hospital-sim](https://github.com/Bkrakshith/hospital-sim).
 
 This repository is the simulated hospital, its surgical wing, and the surgical instruments that the robot
 handles in the wing. Nothing in it knows about a particular robot. It has no robot model and no controller
